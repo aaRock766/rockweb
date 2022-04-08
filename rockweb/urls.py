@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from mtweb.views import mtindex
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/',index)
+    path('', index)
     ]
