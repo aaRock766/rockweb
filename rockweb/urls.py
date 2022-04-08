@@ -21,5 +21,6 @@ from mtweb.views import mtindex
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index)
+    path('', mtindex, name='mt-index')
+
     ]
