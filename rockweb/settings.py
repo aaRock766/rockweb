@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mymoney.apps.MymoneyConfig',
     'mtweb.apps.MtwebConfig',
+    'myproject.apps.MyprojectConfig',
     ]
 
 MIDDLEWARE = [

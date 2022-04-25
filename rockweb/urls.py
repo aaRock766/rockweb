@@ -15,12 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from mtweb.views import mtindex
+from mtweb import views
+from myproject import views
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mtindex, name='mt-index')
+    # path('', mtindex, name='index'),
+    path('myproject/', include('myproject.urls')),
+
+
 
     ]
