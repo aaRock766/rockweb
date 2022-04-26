@@ -5,5 +5,5 @@ def f(request):
     return render(request,'f-index.html')
 
 
-ded reg(request):
+def reg(request):
     return render(request, 'f-register.html')

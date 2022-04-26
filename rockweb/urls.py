@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from mtweb import urls
-from myproject import urls
+# from mtweb import urls
+# from myproject import urls
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mtindex),
-    path('myproject/', include(urls)),
+    # path('', mtindex),
+    path('myproject/', include('myproject.urls')),
 
 
     ]
