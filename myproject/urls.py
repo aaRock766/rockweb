@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from myproject import views
 
-import myproject.views
-from myproject.views import f_index
 
 urlpatterns = [
-    path('f/', ),
+    path('', views.f ),
 ]
