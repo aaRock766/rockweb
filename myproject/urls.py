@@ -20,4 +20,5 @@ from myproject import views
 
 urlpatterns = [
     path('', views.f ),
+    path('register/',views.reg)
 ]
