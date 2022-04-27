@@ -6,8 +6,18 @@ body {
     font-weight: 300
 }
 
+.reg {
+    margin-top:10000px
+    margin-bottom:10000px
+}
+
+
+
+
+
+
 .height {
-    height: 100vh
+    height: 1000vh
 }
 
 .card {

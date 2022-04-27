@@ -1,14 +1,20 @@
 {%  extends 'f-base.html' %}
+
+{% block c %}
+<link rel="stylesheet" href="../static/css_myproject/css_myproject/css_f-login.css">
+{% endblock c %}
+
 {% block main1 %}
-<div class="container mt-5 mb-5">
+
+<div class="container mt-5 mb-5 reg" >
     <div class="row d-flex align-items-center justify-content-center">
         <div class="col-md-6">
             <div class="card px-5 py-5"> <span class="circle"><i class="fa fa-check"></i></span>
-                <h5 class="mt-3" margin-top="500px">註冊</small>
-                <div class="form-input"> <i class="fa fa-envelope"></i> <input type="Email" class="form-control" placeholder="Email address"> </div>
-                <div class="form-input"> <i class="fa fa-user"></i> <input type="password" class="form-control" placeholder="密碼"> </div>
-                <div class="form-input"> <i class="fa fa-lock"></i> <input type="password" class="form-control" placeholder="請再輸入一次"> </div>
-                <div class="text-center mt-4"> <span>Already a member?</span> <a href="#" class="text-decoration-none">註冊</a> </div>
+                <h5 class="mt-3" >註冊</h5>
+                <div class="form-input"> <i class="fa fa-envelope"></i> <input type="Email" class="form-control" placeholder="Email address 電子信箱"> </div>
+                <div class="form-input"> <i class="fa fa-user"></i> <input type="password" class="form-control" placeholder="Password 密碼"> </div>
+                <div class="form-input"> <i class="fa fa-lock"></i> <input type="password" class="form-control" placeholder="Password 請再輸入一次"> </div>
+                <div class="text-center mt-4"> <a href="#" class="text-decoration-none">註冊</a> </div>
             </div>
         </div>
     </div>
