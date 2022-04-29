@@ -19,8 +19,6 @@ from mtweb.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('myproject/', include('myproject.urls')),
-
-
+    path('', index,name='index'),
+    path('myproject/', include(('myproject.urls', 'myproject'), namespace='fin')),
     ]

@@ -58,8 +58,8 @@
             </li>
           </ul>
           <span class="d-flex">
-            <button type="button" onclick="window.location.href='https://www.facebook.com/'" class="btn btn btn-warning me-2" >登入</button>
-            <button type="button" class="btn btn btn-success" >註冊</button>
+            <button type="button" onclick="window.location.href='{% url 'fin:reg' %}'" class="btn btn btn-warning me-2" >登入</button>
+            <button type="button" onclick="window.location.href='{% url 'fin:login' %}'"class="btn btn btn-success" >註冊</button>
           </span>
         </div>
       </div>
